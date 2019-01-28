@@ -1,12 +1,242 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Техномарт</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="main-header">
+
+    <div class="header-top">
+      <a class="main-logo">
+        <img src="#" width="" height="" alt="логотип интернет-магазина «Техномарт»">
+      </a>
+      <form action="#" method="GET">
+        <input type="search" name="search" id="search" placeholder="Поиск:">
+        <label class="search-label" for="search"></label>
+      </form>
+      <a href="#">Закладки:</a>
+      <a href="#">Корзина:</a>
+      <a href="#">Оформить заказ</a>
+    </div>
+
+    <div class="header-center">
+      <h1 class="title-description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+      <div class="phone">
+        <p class="phone-number">+7 (812) 555-05-55</p>
+      </div>
+      <p class="address">г. Санкт-Петербург, уд. Б.Конюшенная, д. 19/8</p>
+      <ul class="user-info">
+        <li class="login">Войти</li>
+        <li class="registration">Регистрация</li>
+      </ul>
+    </div>
+
+    <nav class="navigation">
+      <ul class="site-navigation">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Спецпредложения</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="container">
+
+    <section class="promo">
+      <div class="materials">
+        <p>Материалы</p>
+        <a href="#" class="promo-btn">На любой вкус</a>
+        <div class="materials-img">
+          <img src="#" width="" height="" alt="Материалы на любой вкус">
+        </div>
+      </div>
+      <div class="tools">
+        <p>Инструменты</p>
+        <a href="#" class="promo-btn">На все случаи</a>
+        <div class="tools-img">
+          <img src="#" width="" height="" alt="Инструменты на все случаи">
+        </div>
+      </div>
+      <div class="technics">
+        <p>Техника</p>
+        <a href="#" class="promo-btn">Для стройки</a>
+        <div class="technics-img">
+          <img src="#" width="" height="" alt="Техника для стройки">
+        </div>
+      </div>
+      <div class="discounts">
+        <p>Скидки 50%</p>
+        <a href="#" class="promo-btn">На 350 товаров</a>
+        <div class="discounts-img">
+          <img src="#" width="" height="" alt="Скидки 50% на 350 товаров">
+        </div>
+      </div> 
+      <div class="delivery">
+        <p>Доставка</p>
+        <a href="#" class="promo-btn">Бесплатно</a>
+        <div class="delivery-img">
+          <img src="#" width="" height="" alt="Доставка бесплатно">
+        </div>
+      </div>
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+        </div>
+        <div class="slider-inner">
+          <div class="slider-slides">
+            <div class="slide-first">
+              <p class="slider-title">Перфораторы</p>
+              <span class="slider-description">Настоящие мужские игрушки</span>
+              <img src="#" width="" height="" alt="Перфораторы">
+              <a class="btn" href="#">Открыть каталог</a>
+            </div>
+            <div class="slide-second">
+              <p class="slider-title">Дрели</p>
+              <span class="slider-description">Соседям на радость!</span>
+              <img src="#" width="" height="" alt="Дрели">
+              <a class="btn" href="#">Открыть каталог</a>
+            </div>  
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="popular-goods">
+      <div class="popular">
+        <h2>Популярные товары:</h2>
+        <a href="#" class="btn">Все популярные товары</a>
+      </div>
+      <article class="perforators">
+        <div class="perforators-actions">
+          <div class="perforators-image">
+            <img src="#" width="" height="" alt="Перфоратор BOSCH BFG 9000">
+          </div>
+          <div class="perforators-description">
+            <p class="perforators-title">Перфоратор BOSCH BFG 9000</p>
+          </div>
+          <span class="old-price">32500 Р.</span>
+          <a class="btn" href="#">25500 Р.</a>
+          <a href="#" class="buy">Купить</a>
+          <a href="#" class="bookmark">В закладки</a>
+        </div>              
+        <div class="perforators-description">
+          <span class="perforators-title">Перфоратор BOSCH BFG 9000</span>
+        </div>
+        <span class="oldprice">32500 Р.</span>
+        <a class="btn" href="#">25500 Р.</a>
+      </article>
+
+      <article class="perforators">
+        <div class="perforators-actions">
+          <div class="perforators-image">
+            <img src="#" width="" height="" alt="Перфоратор BOSCH BFG 3000">
+          </div>
+          <div class="perforators-description">
+            <p class="perforators-title">Перфоратор BOSCH BFG 3000</p>
+          </div>
+          <span class="old-price">25500 Р.</span>
+          <a class="btn" href="#">15500 Р.</a>
+          <a href="#" class="buy">Купить</a>
+          <a href="#" class="bookmark">В закладки</a>
+        </div>              
+        <div class="perforators-description">
+          <span class="perforators-title">Перфоратор BOSCH BFG 3000</span>
+        </div>
+        <span class="oldprice">25500 Р.</span>
+        <a class="btn" href="#">15500 Р.</a>
+      </article>
+
+      <article class="perforators">
+        <div class="perforators-actions">
+          <div class="perforators-image">
+            <img src="#" width="" height="" alt="Перфоратор BOSCH BFG 6000">
+          </div>
+          <div class="perforators-description">
+            <p class="perforators-title">Перфоратор BOSCH BFG 6000</p>
+          </div>
+          <span class="old-price">30500 Р.</span>
+          <a class="btn" href="#">25500 Р.</a>
+          <a href="#" class="buy">Купить</a>
+          <a href="#" class="bookmark">В закладки</a>
+        </div>              
+        <div class="perforators-description">
+          <span class="perforators-title">Перфоратор BOSCH BFG 6000</span>
+        </div>
+        <span class="oldprice">30500 Р.</span>
+        <a class="btn" href="#">25500 Р.</a>
+      </article>
+
+      <article class="perforators">
+        <div class="perforators-actions">
+          <div class="perforators-image">
+            <img src="#" width="" height="" alt="Перфоратор BOSCH BFG 2000">
+          </div>
+          <div class="perforators-description">
+            <p class="perforators-title">Перфоратор BOSCH BFG 2000</p>
+          </div>
+          <a class="btn" href="#">12500 Р.</a>
+          <a href="#" class="buy">Купить</a>
+          <a href="#" class="bookmark">В закладки</a>
+        </div>              
+        <div class="perforators-description">
+          <span class="perforators-title">Перфоратор BOSCH BFG 2000</span>
+        </div>
+        <a class="btn" href="#">12500 Р.</a>
+      </article>
+          
+    </section>
+
+    <section class="popular-producers">
+      <div class="popular">
+        <h2>Популярные производители:</h2>
+        <a href="#" class="btn">Все производители</a>
+      </div>
+      <article class="producers">
+        <div class="producers-img">
+          <img src="#" width="" height="" alt="BOSCH">
+        </div>
+        <div class="producers-img">
+          <img src="#" width="" height="" alt="Makita">
+        </div>
+        <div class="producers-img">
+          <img src="#" width="" height="" alt="DeWalt">
+        </div>
+        <div class="producers-img">
+          <img src="#" width="" height="" alt="Интерскол">
+        </div>
+        <div class="producers-img">
+          <img src="#" width="" height="" alt="Hitachi">
+        </div>
+        <div class="producers-img">
+          <img src="#" width="" height="" alt="LG">
+        </div>
+        <div class="producers-img">
+          <img src="#" width="" height="" alt="AEG">
+        </div>
+        <div class="producers-img">
+          <img src="#" width="" height="" alt="Metabo">
+        </div>      
+      </article>
+    </section>
+
+  </main>
+
+
+
+
+</body>
+
 </html>
