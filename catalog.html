@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="header-top">
         <a class="main-logo">
-          <img src="img/logo-technomart.svg" width="" height="" alt="логотип интернет-магазина «Техномарт»">
+          <img src="img/header-logo.svg" width="220" height="47" alt="логотип интернет-магазина «Техномарт»">
         </a>
         <form class="form-search" action="#" method="post">
           <input type="search" name="search" id="search" placeholder="Поиск:">
@@ -54,14 +57,16 @@
         <li><span>Перфораторы</span></li>
       </ul>
 
-      <h2>Перфораторы</h2>
+      <div class="perforators-background">
+        <h2>Перфораторы</h2>
+      </div>  
       <section class="catalog">
         <div class="catalog-sidebar">
-          <p class="filter-title">Фильтр:</p>
+          <p class="sidebar-title">Фильтр:</p>
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="catalog-filter" action="#" method="post">
             <section class="cost-range">
-              <h3>Цена:</h3>
+              <p class="filter-title">Цена:</p>
               <div class="cost-range-block">
                 <div class="cost-value">
                   <span class="value-left"></span>
@@ -76,7 +81,7 @@
             </section>
 
             <fieldset class="filter-producers">
-              <legend class="filter-producers-title">Производители:</legend>
+              <legend class="filter-title">Производители:</legend>
               <ul>
                 <li class="filter-producers-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="option-1" id="filter-bosch" value="BOSCH" checked>
@@ -102,13 +107,13 @@
             </fieldset>
 
             <fieldset class="filter-power">
-              <legend class="filter-power-title">Питание:</legend>
+              <legend class="filter-title">Питание:</legend>
               <ul>
-                <li class="filter-option">
+                <li class="filter-power-option">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option-6" id="filter-battery" value="battery" checked>
                   <label for="battery">Аккумуляторные</label>
                 </li>
-                <li class="filter-option">
+                <li class="filter-power-option">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option-7" id="filter-mains" value="mains">
                   <label for="battery">Сетевые</label>
                 </li>
@@ -122,9 +127,9 @@
           <div class="catalog-sorting">
             <p class="sorting">Сортировка:</p>
             <h2 class="visually-hidden">Сортировка товаров</h2>
-            <a class="price active" href="#">По цене</a>
-            <a class="type" href="#">По типу</a>
-            <a class="functional" href="#">По функционалу</a>
+            <a class="sorting-links price active" href="#">По цене</a>
+            <a class="sorting-links type" href="#">По типу</a>
+            <a class="sorting-links functional" href="#">По функционалу</a>
             <div class="up-down">
               <a class="up" href="#"></a>
               <a class="down" href="#"></a>
@@ -249,17 +254,17 @@
           </div>
 
           <div class="pagination">
-            <a class="pagination-link-active" href="#">1</a>
+            <a class="pagination-link active" href="#">1</a>
             <a class="pagination-link" href="#">2</a>
             <a class="pagination-link" href="#">3</a>
-            <a class="pagination-link-next" href="#">Следующая</a>
+            <a class="pagination-link" href="#">Следующая</a>
           </div>
         </div>
       </section>
       
-      <section class="about-us">
+      <section class="catalog-about-us">
         <h2>Пара слов о перфораторах</h2>
-        <p class="description">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> 
+        <p class="company-contacts-description">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> 
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповёрта и отбойного молотка. В ассортиментном ряду есть выбор "трёхрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>   
       </section>
     </main>
@@ -267,27 +272,27 @@
     <footer class="main-footer">
       <div class="footer-top">
         <a class="main-logo-footer">
-          <img src="img/logo-technomart.svg" width="" height="" alt="логотип интернет-магазина «Техномарт»">
+          <img src="img/footer-logo.svg" width="220" height="68" alt="логотип интернет-магазина «Техномарт»">
         </a>
         <p class="address-footer">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
         +7 (812) 555-05-55</p>
-        <ul class="site-navigation">
+        <ul class="footer-site-navigation">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="site-navigation-footer">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
+        <ul class="footer-site-navigation">
+          <li><a class="yellow-text" href="#">Материалы</a></li>
+          <li><a class="yellow-text" href="#">Техника</a></li>
+          <li><a class="yellow-text" href="#">Инструмент</a></li>
+          <li><a class="yellow-text" href="#">Спецпредложения</a></li>
         </ul>
       </div> 
   
       <div class="footer-bottom">
-        <p class="copyright">&copy; 2010-2019 Компания «Техномарт» Все права защищены</p>
+        <p class="footer-contacts copyright">&copy; 2010-2019 Компания «Техномарт» Все права защищены</p>
         <ul class="social">
           <li>
             <a class="social-btn social-btn-vk" href="#">Вконтакте
@@ -305,17 +310,17 @@
             </a>
           </li>
         </ul>
-        <p class="feedback">Обратная связь:
+        <p class="footer-contacts feedback">Обратная связь:
           <a class="yellow-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="feedback">Разработано -
+        <p class="footer-contacts feedback">Разработано -
           <a class="yellow-text" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </footer>
 
     <section class="modal modal-cart">
-      <h2 class="Добавление товаров в корзину">Как нас найти</h2>
+      <h2 class="visually-hidden">Добавление товаров в корзину</h2>
       <div class="modal-cart-icon"></div>
       <p class="modal-cart-description">Товар добавлен в корзину!</p>
       <div class="modal-cart-btn">
