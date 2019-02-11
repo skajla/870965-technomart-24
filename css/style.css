@@ -18,10 +18,10 @@ a {
   background-color: #293449;
 }
 
-.header-center {
+/*.header-center {
   background-image: url("../img/header-bckrnd.svg");
   background-repeat: no-repeat;
-}
+}*/
 
 .user-actions a {
   color: #FFFFFF;
@@ -51,14 +51,14 @@ a {
 }
 
 .user-actions .bookmarks:hover,
-.user-actions .cart:hover, {
+.user-actions .cart:hover {
   background-color: #212A3A;
   color: rgba(255, 255, 255, 1);
 }
 
 
 .user-actions .bookmarks:active,
-.user-actions .cart:active, {
+.user-actions .cart:active {
   background-color: #161D29;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -582,4 +582,131 @@ a {
 .catalog-about-us {
   background-image: url("../img/catalog-bckgrnd.svg");
   background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* flex */
+
+.header-top {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-wrapper {
+  width: 100%;
+  background-color: #F3F7F8;
+}
+
+.header-center {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-description {
+  width: 226px;
+  height: 60px;
+}
+
+.navigation {
+  width: 940px;
+  height: 60px;
+  margin: 0 auto;
+ 
+}
+
+.site-navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.site-navigation a {
+  display: block;
+  padding-top: 22px;
+  padding-right: 30px;
+  padding-bottom: 18px;
+  padding-left: 30px;
+}
+
+.products-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.producers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.company-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: center; 
+}
+
+.address-footer {
+  width: 330px;
+  margin: 0;
+  margin-right: 117px;
+}
+
+.footer-site-navigation {
+  display: flex;
+}
+
+.footer-bottom {
+  padding: 35px 0;
+}
+
+.copyright {
+  margin: 0;
+  margin-right: 160px;
+  width: 230px;
+}
+
+.footer-social {
+  margin: 0;
+  margin-right: 117px;
+  width: 133px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mailto {
+  width: 140px;
+  margin: 0;
+  margin-right: 49px;
+}
+
+.feedback { 
+  width: 101px;
+  margin: 0;
+  margin-left: auto;
 }

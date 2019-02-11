@@ -24,29 +24,31 @@
         </div>
       </div>
 
-      <div class="header-center">
-        <h1 class="title-description">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <div class="header-contacts">
-          <p class="phone-number">+7 (812) 555-05-55</p>
-          <p class="address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+      <div class="header-wrapper">
+        <div class="header-center">
+          <h1 class="title-description">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <div class="header-contacts">
+            <p class="phone-number">+7 (812) 555-05-55</p>
+            <p class="address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+          </div>
+          <ul class="user-info">
+            <li><a class="login" href="#">Войти</a></li>
+            <li><a class="registration" href="#">Регистрация</a></li>
+          </ul>
         </div>
-        <ul class="user-info">
-          <li><a class="login" href="#">Войти</a></li>
-          <li><a class="registration" href="#">Регистрация</a></li>
-        </ul>
-      </div>
 
-      <nav class="navigation">
-        <ul class="site-navigation">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+        <nav class="navigation">
+          <ul class="site-navigation">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
@@ -167,25 +169,25 @@
             <a href="#"><img src="img/bosch.png" width="126" height="37" alt="BOSCH"></a>
           </div>
           <div class="producers-img">
-              <a href="#"><img src="img/makita.png" width="123" height=40"" alt="Makita"></a>
+            <a href="#"><img src="img/makita.png" width="123" height=40"" alt="Makita"></a>
           </div>
           <div class="producers-img">
-              <a href="#"><img src="img/dewalt.png" width="146" height="44" alt="DeWalt"></a>
+            <a href="#"><img src="img/dewalt.png" width="146" height="44" alt="DeWalt"></a>
           </div>
           <div class="producers-img">
-              <a href="#"><img src="img/interskol.png" width="200" height="88" alt="Интерскол"></a>
+            <a href="#"><img src="img/interskol.png" width="200" height="88" alt="Интерскол"></a>
           </div>
           <div class="producers-img">
-              <a href="#"><img src="img/hitachi.png" width="169" height="31" alt="Hitachi"></a>
+            <a href="#"><img src="img/hitachi.png" width="169" height="31" alt="Hitachi"></a>
           </div>
           <div class="producers-img">
-              <a href="#"><img src="img/lg.png" width="121" height="73" alt="LG"></a>
+            <a href="#"><img src="img/lg.png" width="121" height="73" alt="LG"></a>
           </div>
           <div class="producers-img">
-              <a href="#"><img src="img/aeg.png" width="151" height="96" alt="AEG"></a>
+            <a href="#"><img src="img/aeg.png" width="151" height="96" alt="AEG"></a>
           </div>
           <div class="producers-img">
-              <a href="#"><img src="img/metabo.png" width="204" height="69" alt="Metabo"></a>
+            <a href="#"><img src="img/metabo.png" width="204" height="69" alt="Metabo"></a>
           </div>      
         </article>
       </section>
@@ -254,51 +256,63 @@
 
     <footer class="main-footer">
       <div class="footer-top">
-        <a class="main-logo-footer">
-          <img src="img/footer-logo.svg" width="220" height="68" alt="логотип интернет-магазина «Техномарт»">
-        </a>
-        <p class="address-footer">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
-        +7 (812) 555-05-55</p>
-        <ul class="footer-site-navigation">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="footer-site-navigation">
-          <li><a class="yellow-text" href="#">Материалы</a></li>
-          <li><a class="yellow-text" href="#">Техника</a></li>
-          <li><a class="yellow-text" href="#">Инструмент</a></li>
-          <li><a class="yellow-text" href="#">Спецпредложения</a></li>
-        </ul>
+        <div class="footer-wrapper">
+          <div class="footer-contact-left">
+            <a class="main-logo-footer">
+              <img src="img/footer-logo.svg" width="220" height="68" alt="логотип интернет-магазина «Техномарт»">
+            </a>
+            <p class="address-footer">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
+            +7 (812) 555-05-55</p>
+          </div>
+          <div class="footer-contact-top"> 
+            <ul class="footer-site-navigation">
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>  
+          <div class="footer-contact-bottom">
+            <ul class="footer-site-navigation">
+              <li><a class="yellow-text" href="#">Материалы</a></li>
+              <li><a class="yellow-text" href="#">Техника</a></li>
+              <li><a class="yellow-text" href="#">Инструмент</a></li>
+              <li><a class="yellow-text" href="#">Спецпредложения</a></li>
+            </ul>
+          </div>   
+        </div>
       </div> 
 
       <div class="footer-bottom">
-        <p class="footer-contacts copyright">&copy; 2010-2019 Компания «Техномарт» Все права защищены</p>
-        <ul class="social">
-          <li>
-            <a class="social-btn social-btn-vk" href="#">Вконтакте
-              <span class="visually-hidden">«Техномарт» Вконтакте</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук
-              <span class="visually-hidden">«Техномарт» в Фейсбук</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-btn social-btn-ig" href="#">Инстаграм
-              <span class="visually-hidden">«Техномарт» в Инстаграм</span>
-            </a>
-          </li>
-        </ul>
-        <p class="footer-contacts feedback">Обратная связь:
-          <a class="yellow-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="footer-contacts feedback">Разработано -
-          <a class="yellow-text" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </p>
+        <div class="footer-wrapper">
+          <p class="footer-contacts copyright">&copy; 2010-2019 Компания «Техномарт» Все права защищены</p>
+          <div class="footer-social">
+            <ul class="social">
+              <li>
+                <a class="social-btn social-btn-vk" href="#">Вк
+                  <span class="visually-hidden">«Техномарт» Вконтакте</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-btn social-btn-fb" href="#">Фб
+                  <span class="visually-hidden">«Техномарт» в Фейсбук</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-btn social-btn-ig" href="#">Иг
+                  <span class="visually-hidden">«Техномарт» в Инстаграм</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer-contacts mailto">Обратная связь:
+            <a class="yellow-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer-contacts feedback">Разработано -
+            <a class="yellow-text" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
+        </div>
       </div>
     </footer>
 
