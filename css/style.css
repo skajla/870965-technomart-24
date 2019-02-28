@@ -96,12 +96,12 @@ img {
   content: "";
   
   position: absolute;
-
-  width: 100%;
-  height: 5px;
   left: 0;
   bottom: -5px;
 
+  width: 100%;
+  height: 5px;
+  
   background-color: #B52932;
 }
 
@@ -201,9 +201,9 @@ img {
   position: absolute;
   top: 50%;
   left: 17px;
+
   width: 14px;
   height: 16px;
-
   margin-top: -10px;
   
   background-image: url("../img/icon-bookmark.svg");
@@ -309,7 +309,7 @@ img {
   margin: 0;
   padding: 0;
   width: 198px;
-  padding-top: 5px; 
+  padding-top: 3px; 
   padding-left: 52px;
 
   font-size: 16px;
@@ -376,6 +376,7 @@ img {
 .user-info {
   display: flex;
   justify-content: flex-end;
+  margin-top: 11px;
 }
 
 .user-info a {
@@ -442,7 +443,7 @@ img {
 .navigation {
   width: 940px;
   margin: 0;
-  margin-top: 37px;
+  margin-top: 39px;
 
   background-color: #32425c;
   border-bottom: 5px solid #293449;
@@ -1459,18 +1460,103 @@ img {
 
 /* стили каталога */
 
-.login-account {
+.catalog-cart {
+  background-color: #EE3643;
+}
+
+.user-corner {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 299px;
+}
+
+.my-account {
+  position: relative;
+
+  padding-left: 47px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  width: 299px;
+  
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+
+  background-color: #FFFFFF;
 }
 
-.login-account:active {
+.my-account::before {
+  content: "";
+  
+  position: absolute;
+  left: 13px;
+  top: 12px;
+
+  width: 20px;
+  height: 18px;
+  
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.my-account:hover::before {
+  background-image: url("../img/icon-user-hover.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.my-account:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.orders,
+.logout {
+  position: absolute;
+  right: 11px;
+  top: 13px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.logout:hover {
+  background-image: url("../img/icon-logout-hover.svg");
+}
+
 .profile {
+  margin-top: 6px;
+  padding-left: 18px;
+}
+
+.my-profile {
+  position: relative;
+
+  padding-left: 29px;
+}
+
+.my-profile::before {
+  content: "";
+  
+  position: absolute;
+  left: 11px;
+  top: 8px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #32425C;
+
+  border-radius: 50%;
+}
+
+.orders,
+.my-profile {
   font-size: 16px;
   line-height: 18px;
   color: #32425C;
@@ -1478,15 +1564,12 @@ img {
 }
 
 .orders:hover,
-.profile:hover {
-  font-size: 16px;
-  line-height: 18px;
+.my-profile:hover {
   color: #EE3643;
-  text-decoration: underline;
 }
 
 .orders:active,
-.profile:active {
+.my-profile:active {
   color: rgba(50, 66, 92, 0.3);
 }
 
