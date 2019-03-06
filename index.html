@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
   </head>
   <body>
     <header class="main-header">
@@ -118,7 +119,7 @@
               <span class="product-old-price">32500 Р.</span>
               <a class="product-btn" href="#">25500 Р.</a>
               <div class="product-overlay">
-                <a class="product-buy" href="#">Купить</a>
+                <a class="product-buy cart-link" href="#">Купить</a>
                 <a class="product-bookmark" href="#">В закладки</a>
               </div>
             </article>
@@ -131,7 +132,7 @@
               <span class="product-old-price">22500 Р.</span>
               <a class="product-btn" href="#">15500 Р.</a>
               <div class="product-overlay">
-                <a class="product-buy" href="#">Купить</a>
+                <a class="product-buy cart-link" href="#">Купить</a>
                 <a class="product-bookmark" href="#">В закладки</a>
               </div>
             </article>
@@ -144,7 +145,7 @@
               <span class="product-old-price">30500 Р.</span>
               <a class="product-btn" href="#">25500 Р.</a>
               <div class="product-overlay">
-                <a class="product-buy" href="#">Купить</a>
+                <a class="product-buy cart-link" href="#">Купить</a>
                 <a class="product-bookmark" href="#">В закладки</a>
               </div>
             </article>
@@ -156,7 +157,7 @@
               <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
               <a class="product-btn no-discount" href="#">12500 Р.</a>
               <div class="product-overlay">
-                <a class="product-buy" href="#">Купить</a>
+                <a class="product-buy cart-link" href="#">Купить</a>
                 <a class="product-bookmark" href="#">В закладки</a>
               </div>
             </article>
@@ -240,7 +241,7 @@
             <h2 class="title-second">Контакты</h2>
             <p class="company-contacts-description-3">Вы можете забрать товар сами, заехав в наш офис:</p>
             <div class="map-img">
-              <a class="map" href="#">
+              <a class="map button-map" href="#">
                 <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
               </a>  
             </div>
@@ -321,20 +322,20 @@
       </div>
     </footer>
 
-    <section class="modal modal-map visually-hidden">
+    <section class="modal modal-map">
       <h2 class="visually-hidden title-second">Как нас найти</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002912!2d30.320858715826557!3d59.938719169054494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1550844353752" width="943" height="449" style="border:0" allowfullscreen></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <section class="modal modal-write-us visually-hidden">
+    <section class="modal modal-write-us">
       <h2 class="visually-hidden title-second">Форма обратной связи</h2>
       <form class="write" action="#" method="post">
         <div class="message">
           <div class="write-us-top">
             <div class="write-us-name">
               <label for="your-name">Ваше имя:</label>
-              <input type="text" id="your-name" name="name" placeholder="Имя Фамилия">
+              <input type="text" id="your-name" name="name-surname" placeholder="Имя Фамилия">
             </div>
             <div class="write-us-mail"> 
               <label for="your-email">Ваш e-mail:</label>
@@ -343,7 +344,7 @@
           </div>  
           <div class="write-us-bottom"> 
             <label for="your-message">Текст письма:</label>
-            <textarea id="your-message" placeholder="В свободной форме"></textarea>
+            <textarea class="your-text" id="your-message" placeholder="В свободной форме"></textarea>
           </div>
         </div>
         <div class="send-btn">
@@ -352,6 +353,16 @@
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
-    <script src="script.js"></script>
+
+    <section class="modal modal-cart">
+      <h2 class="visually-hidden title-second">Добавление товаров в корзину</h2>
+      <p class="modal-cart-description">Товар добавлен в корзину!</p>
+      <div class="modal-cart-btn">
+        <a class="btn cart-order-btn" href="#">Оформить заказ</a>
+        <a class="btn cart-buy-btn" href="#">Продолжить покупки</a>
+      </div>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
