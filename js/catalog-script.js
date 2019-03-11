@@ -2,12 +2,19 @@ var cartItems = document.querySelectorAll(".cart-link");
 var cartPopup = document.querySelector(".modal-cart");
 var cartClose = cartPopup.querySelector(".modal-close");
 
-cartItems.forEach(function(item) {
+/*cartItems.forEach(function(item) {
   item.addEventListener("click", function (evt) {
     evt.preventDefault();
     cartPopup.classList.add("modal-show");
   });
-});
+});*/
+
+for (index = 0; index < cartItems.length; index++) { 
+  cartItems[index].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal-show");
+  });
+}
 
 cartClose.addEventListener("click", function (evt) {
   evt.preventDefault();
